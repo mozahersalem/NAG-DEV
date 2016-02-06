@@ -1,17 +1,8 @@
-body {
-  background-color: blue; }
+.borderInspect {
+  border: 1px solid cyan; }
 
-h1 {
-  color: #08ffbc; }
+body {
+  background-color: #ffffff; }
 
 p {
-  color: #864d1f; }
-
-h2 {
-  color: #670d03; }
-
-body {
-  text-align: center; }
-
-h4 {
-  color: #ffed00; }
+  color: blue; }
