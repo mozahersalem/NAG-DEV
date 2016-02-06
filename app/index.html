@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="NileArtGallery">
+  <head>
+    <meta charset="utf-8">
+    <title>Nile Art Gallery</title>
+    <link rel="stylesheet" href="/css/main.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="lip/css/bootstrap.css" media="screen" title="no title" charset="utf-8">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+  </head>
+  <body >
+    <main-nav></main-nav>
+    <div ng-view></div>
+    <div class="" ng-controller="testController">
+      <p>
+        {{name}}
+      </p>
+      <h1>HELLO</h1>
+      <h2>rhis is happing</h2>
+      <h4>GHJGHGJHGJHGJHGJHGJ</h4>
+      <div class="">
+        <p>5 + 6 =
+          {{ greeting }}
+          {{name}}</p>
+      </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="lip/js/angular.js"></script>
+    <script type="text/javascript" src="lip/js/angular-route.js"></script>
+    <script type="text/javascript" src=""></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/controllers/test.js"></script>
+    <script type="text/javascript" src="js/directives/mainNav/mainNav.js"></script>
+    <!-- <script type="text/javascript" src="js/directives/artistMenu/artistMenu.js"></script> -->
+    <script src="lip/js/bootstrap.js"></script>
+  </body>
+</html>
