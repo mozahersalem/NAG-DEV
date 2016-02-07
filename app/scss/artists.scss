@@ -1,0 +1,25 @@
+.artistsMenuContainer {
+  max-height: 450px;
+  overflow-y: scroll;
+  // min-width: 200px;
+  text-align: left;
+  .artistsMenu {
+    padding: 5px;
+    li {
+      padding: 5px;
+      line-height: 30px;
+      list-style-type: none;
+      background-color: rgb(177, 177, 177);
+    }
+  }
+}
+.artistBio{
+  background-color: rgb(210, 212, 211);
+  padding: 30px;
+}
+
+@media (max-width: 414px) {
+  .artistsMenuContainer{
+    height: 250px;
+  }
+}

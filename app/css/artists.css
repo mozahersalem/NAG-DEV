@@ -1,12 +1,3 @@
-.borderInspect {
-  border: 1px solid cyan; }
-
-body {
-  background-color: #ffffff; }
-
-p {
-  color: blue; }
-
 .artistsMenuContainer {
   max-height: 450px;
   overflow-y: scroll;
