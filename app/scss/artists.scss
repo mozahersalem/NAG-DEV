@@ -10,6 +10,10 @@
       line-height: 30px;
       list-style-type: none;
       background-color: rgb(177, 177, 177);
+      cursor: move;
+    }
+    li:hover{
+      background-color: rgb(255, 255, 255);
     }
   }
 }

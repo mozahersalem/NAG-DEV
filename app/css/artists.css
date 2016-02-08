@@ -8,7 +8,10 @@
       padding: 5px;
       line-height: 30px;
       list-style-type: none;
-      background-color: #b1b1b1; }
+      background-color: #b1b1b1;
+      cursor: move; }
+    .artistsMenuContainer .artistsMenu li:hover {
+      background-color: white; }
 
 .artistBio {
   background-color: #d2d4d3;

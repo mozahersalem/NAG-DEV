@@ -1,17 +1,17 @@
-<p>This is the partial for Artist.</p>
 <!-- <artists-menu></artists-menu> -->
   <div class="container" ng-controller="ArtistsController">
+    <p>This is the partial for Artist.</p>
     <div class="row borderInspect">
-      <div class="col-xs-12 col-sm-3 borderInspect">
+      <div class="col-xs-8 col-sm-3 borderInspect">
         <div class="row borderInspect">
-          <div class="artistsMenuContainer col-sx-10 borderInspect">
-            <ul class="artistsMenu" ng-repeat='artist in Artists'>
-              <li class="borderInspect" ng-click="showArtistBio($index)">{{artist.name}}</li>
+          <div class="artistsMenuContainer borderInspect">
+            <ul class="artistsMenu" >
+              <li class="borderInspect" ng-repeat='artist in Artists' ng-click="showArtistBio($index)">{{artist.name}}</li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-8 col-sm-offset-1 artistBio" >
+      <div class="col-xs-12 col-sm-9 artistBio borderInspect">
         <p>
           {{bio}}
         </p>

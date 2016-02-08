@@ -2,9 +2,25 @@
 .borderInspect{
   border: 1px solid rgb(0, 255, 255);
 }
-body{
-  background-color: #ffffff;
+.container{
+  min-width: 360px;
 }
-p{
-  color: blue;
+
+// AboutUa Page
+
+
+.aboutUsContainer{
+  .logoAboutusHidden{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+   .bioParagraph{
+     padding: 10px 20px;
+   }
+   .logoAboutus{
+     width: 200px;
+     margin-top: -40px;
+     margin-left: 15px;
+   }
 }
