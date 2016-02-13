@@ -1,0 +1,34 @@
+.sliderContainer {
+  height: 600px;
+  .carousel {
+    height: 600px;
+    .slide {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  .carouselIndicators {
+    text-align: center;
+    .rn-carousel-indicator {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .sliderContainer{
+    height: 200px;
+    .carousel{
+      height: 250px;
+    }
+  }
+}
+@media screen and (max-width: 420px) {
+  .sliderContainer{
+    height: 200px;
+    .carousel{
+      height: 300px;
+    }
+  }
+}

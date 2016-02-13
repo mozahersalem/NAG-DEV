@@ -1,0 +1,24 @@
+.sliderContainer {
+  height: 600px; }
+  .sliderContainer .carousel {
+    height: 600px; }
+    .sliderContainer .carousel .slide {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain; }
+  .sliderContainer .carouselIndicators {
+    text-align: center; }
+    .sliderContainer .carouselIndicators .rn-carousel-indicator {
+      text-align: center; }
+
+@media screen and (max-width: 375px) {
+  .sliderContainer {
+    height: 200px; }
+    .sliderContainer .carousel {
+      height: 250px; } }
+
+@media screen and (max-width: 420px) {
+  .sliderContainer {
+    height: 200px; }
+    .sliderContainer .carousel {
+      height: 300px; } }

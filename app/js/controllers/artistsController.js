@@ -60,7 +60,11 @@ angular.module('NileArtGallery').controller('ArtistsController', ['$scope', func
   $scope.showArtistBio = function($index){
     $scope.count = $index;
     $scope.bio = $scope.Artists[$index].bio;
-    console.log($scope.bio);
-    console.log($scope.count);
+    // console.log($scope.bio);
+    // console.log($scope.count);
   };
+  $scope.showDefaultBio = true;
+  $scope.hideDefaultBio = function(){
+    $scope.showDefaultBio = false;
+  }
 }]);

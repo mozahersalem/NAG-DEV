@@ -1,19 +1,22 @@
 <!-- <artists-menu></artists-menu> -->
   <div class="container" ng-controller="ArtistsController">
     <p>This is the partial for Artist.</p>
-    <div class="row borderInspect">
-      <div class="col-xs-8 col-sm-3 borderInspect">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-md-3">
         <div class="row borderInspect">
           <div class="artistsMenuContainer borderInspect">
             <ul class="artistsMenu" >
-              <li class="borderInspect" ng-repeat='artist in Artists' ng-click="showArtistBio($index)">{{artist.name}}</li>
+              <li class="borderInspect" ng-repeat='artist in Artists' ng-click="showArtistBio($index); hideDefaultBio()">{{artist.name}}</li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-9 artistBio borderInspect">
+      <div class="col-xs-12 col-sm-8 col-md-9 artistBio borderInspect">
         <p>
           {{bio}}
+        </p>
+        <p ng-show="showDefaultBio">
+          {{Artists[0].bio}}
         </p>
 
       </div>

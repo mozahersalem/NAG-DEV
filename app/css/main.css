@@ -20,6 +20,7 @@
 .artistsMenuContainer {
   max-height: 450px;
   overflow-y: scroll;
+  min-width: 200px;
   text-align: left; }
   .artistsMenuContainer .artistsMenu {
     padding: 5px; }
@@ -36,6 +37,31 @@
   background-color: #d2d4d3;
   padding: 30px; }
 
-@media (max-width: 414px) {
+@media (max-width: 750px) {
   .artistsMenuContainer {
     height: 250px; } }
+
+.sliderContainer {
+  height: 600px; }
+  .sliderContainer .carousel {
+    height: 600px; }
+    .sliderContainer .carousel .slide {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain; }
+  .sliderContainer .carouselIndicators {
+    text-align: center; }
+    .sliderContainer .carouselIndicators .rn-carousel-indicator {
+      text-align: center; }
+
+@media screen and (max-width: 375px) {
+  .sliderContainer {
+    height: 200px; }
+    .sliderContainer .carousel {
+      height: 250px; } }
+
+@media screen and (max-width: 420px) {
+  .sliderContainer {
+    height: 200px; }
+    .sliderContainer .carousel {
+      height: 300px; } }
