@@ -1,24 +1,33 @@
 <!-- <artists-menu></artists-menu> -->
-  <div class="container" ng-controller="ArtistsController">
-    <p>This is the partial for Artist.</p>
-    <div class="row">
-      <div class="col-xs-12 col-sm-4 col-md-3">
-        <div class="row borderInspect">
-          <div class="artistsMenuContainer borderInspect">
-            <ul class="artistsMenu" >
-              <li class="borderInspect" ng-repeat='artist in Artists' ng-click="showArtistBio($index); hideDefaultBio()">{{artist.name}}</li>
+<div class="container" ng-controller="ArtistsController">
+  <!-- <p>This is the partial for Artist.</p> -->
+  <div class="row">
+    <div class="col-xs-12 col-sm-4 col-md-3">
+      <div class="row borderInspect">
+        <div class="artistsMenuContainer borderInspect">
+          <ul class="artistsMenu hidden-xs">
+            <li class="borderInspect" ng-repeat='artist in Artists' ng-click="showArtistBio($index); hideDefaultBio()">{{artist.name}}</li>
+          </ul>
+          <div class="dropdown col-xs-12 artistsMenu visible-xs">
+            <button class="btn btn-default btn-block dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Artists
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu col-xs-12" aria-labelledby="dropdownMenu1">
+              <li ng-repeat='artist in Artists' ng-click="showArtistBio($index); hideDefaultBio()">{{artist.name}}</li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-8 col-md-9 artistBio borderInspect">
-        <p>
-          {{bio}}
-        </p>
-        <p ng-show="showDefaultBio">
-          {{Artists[0].bio}}
-        </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 artistBio borderInspect">
+      <p>
+        {{bio}}
+      </p>
+      <p ng-show="showDefaultBio">
+        {{Artists[0].bio}}
+      </p>
 
-      </div>
     </div>
   </div>
+</div>

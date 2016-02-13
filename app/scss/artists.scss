@@ -1,6 +1,6 @@
 .artistsMenuContainer {
   max-height: 450px;
-  overflow-y: scroll;
+  // overflow-y: scroll;
   min-width: 200px;
   text-align: left;
   .artistsMenu {
@@ -21,9 +21,9 @@
   background-color: rgb(210, 212, 211);
   padding: 30px;
 }
-
-@media (max-width: 750px) {
-  .artistsMenuContainer{
-    height: 250px;
-  }
-}
+//
+// @media (max-width: 750px) {
+//   .artistsMenuContainer{
+//     height: 250px;
+//   }
+// }
