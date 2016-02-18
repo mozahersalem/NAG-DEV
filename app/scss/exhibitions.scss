@@ -1,0 +1,29 @@
+// Exhibitions Page
+.ExhibitionsContainer{
+  .exhibitionMenu{
+    list-style-type: none;
+    padding: 0;
+    li{
+      line-height: 60px;
+      border: 1px solid red;
+    }
+    li:hover{
+      background-color: blue;
+    }
+  }
+  .exhibitionThumbnails{
+    height: 120px;
+    margin: 5px;
+  }
+  .exhibitionDetails{
+    text-align: center;
+    // margin: 10px 0;
+  }
+  .exhibitionsMenuDropDown{
+    margin-bottom: 10px;
+    ul{
+      text-align: center;
+      margin-top: 5px;
+    }
+  }
+}

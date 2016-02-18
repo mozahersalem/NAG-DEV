@@ -60,3 +60,25 @@
     height: 200px; }
     .sliderContainer .carousel {
       height: 300px; } }
+
+.ExhibitionsContainer .exhibitionMenu {
+  list-style-type: none;
+  padding: 0; }
+  .ExhibitionsContainer .exhibitionMenu li {
+    line-height: 60px;
+    border: 1px solid red; }
+  .ExhibitionsContainer .exhibitionMenu li:hover {
+    background-color: blue; }
+
+.ExhibitionsContainer .exhibitionThumbnails {
+  height: 120px;
+  margin: 5px; }
+
+.ExhibitionsContainer .exhibitionDetails {
+  text-align: center; }
+
+.ExhibitionsContainer .exhibitionsMenuDropDown {
+  margin-bottom: 10px; }
+  .ExhibitionsContainer .exhibitionsMenuDropDown ul {
+    text-align: center;
+    margin-top: 5px; }

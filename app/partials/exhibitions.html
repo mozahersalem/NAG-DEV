@@ -1,1 +1,105 @@
-<p>This is the partial for exhibitions.</p>
+<div class="container ExhibitionsContainer" ng-controller="ExhibitionsController">
+  <div class="row borderInspect">
+    <!-- exhibition menu -->
+    <div class="col-md-2 hidden-xs borderInspect">
+      <ul  class="exhibitionMenu borderInspect">
+        <li ng-repeat="exhibition in Exhibitions" ng-click="showExhibition($index); hideDefaultExhibition();">{{exhibition.creator}}</li>
+      </ul>
+    </div>
+    <div class="col-xs-12 exhibitionsMenuDropDown visible-xs">
+      <div class="dropdown">
+        <button class="btn btn-default btn-block dropdown-toggle" type="button" id="exhibitionDropdwounMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Exhibitions
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu col-xs-12" aria-labelledby="exhibitionDropdwounMenu">
+          <li ng-repeat="exhibition in Exhibitions" ng-click="showExhibition($index); hideDefaultExhibition();">{{exhibition.creator}}</li>
+        </ul>
+      </div>
+    </div>
+    <!-- END exhibition menu -->
+
+    <!-- Default main exibition image -->
+    <div class="col-xs-12 col-md-5" ng-show="showDefaultExhibition">
+      <img ng-src="{{Exhibitions[0].mainImage}}" class="img-responsive" alt=""/>
+    </div>
+    <!-- END Default main exibition image -->
+
+    <!-- exhibition main images -->
+    <div class="col-xs-12 col-md-5">
+      <img ng-src="{{mainImage}}" class="img-responsive" alt=""/>
+    </div>
+    <!-- END exhibition main images -->
+
+    <!-- Default  exibition details view -->
+    <div class="col-xs-12 col-md-5 exhibitionDetails" ng-show="showDefaultExhibition">
+      <div class="row">
+        <div class="col-xs-12">
+          <p>
+            {{Exhibitions[0].name}}
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <p>
+            by
+          </p>
+          <p>
+            {{Exhibitions[0].creator}}
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <p>
+            {{Exhibitions[0].date | date}}
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 borderInspect">
+          <img ng-src="{{img}}" ng-repeat="img in Exhibitions[0].images" class="img-rounded exhibitionThumbnails" alt=""/>
+        </div>
+      </div>
+    </div>
+    <!--END Default  exibition details view -->
+
+    <!-- exibition details -->
+    <div class="col-xs-12 col-md-5 exhibitionDetails" ng-show="!showDefaultExhibition">
+      <div class="row">
+        <div class="col-md-12">
+          <p>
+            {{name}}
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p>
+            by
+          </p>
+          <p>
+            {{creator}}
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p>
+            {{date | date}}
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 borderInspect">
+          <img ng-src="{{img}}" ng-repeat="img in images" class="img-rounded exhibitionThumbnails" alt=""/>
+        </div>
+      </div>
+    </div>
+    <!--END exibition details -->
+
+  </div>
+  <!-- End main row -->
+</div>
+<!-- END container -->
