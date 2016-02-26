@@ -7,13 +7,14 @@
   .artistsMenu {
     padding: 5px;
     li {
-      padding: 5px;
-      line-height: 30px;
+      // padding: 5px;
+      text-align: center;
+      line-height: 20px;
       list-style-type: none;
       background-color: rgb(177, 177, 177);
-      cursor: move;
+      cursor: pointer;
     }
-    li:hover{
+    li:hover, li:focus, li:active{
       background-color: rgb(255, 255, 255);
     }
   }
@@ -21,6 +22,9 @@
 .artistBio{
   background-color: rgb(210, 212, 211);
   padding: 30px;
+  .artistImg{
+    height: 120px;
+  }
 }
 //
 // @media (max-width: 750px) {
