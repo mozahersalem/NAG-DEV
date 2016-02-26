@@ -35,4 +35,5 @@ var NileArtGallery = angular.module('NileArtGallery', [
     $routeProvider.otherwise({
       redirectTo: '/home'
     });
+    // $locationProvider.html5Mode(true); //activate HTML5 Mode
   }]);

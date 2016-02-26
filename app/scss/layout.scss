@@ -1,26 +1,72 @@
 // Layout Page
-.borderInspect{
+.borderInspect {
   border: 1px solid rgb(0, 255, 255);
 }
-.container{
+.container {
   min-width: 360px;
 }
-
+// main nav
+.indexNav {
+  // height: 120px;
+}
+@media (min-width: 768px) {
+  .navbar-nav,
+  .navbar-nav li {
+    float: none !important;
+    text-align: center;
+  }
+  .navbar-nav li {
+    display: inline-block !important;
+  }
+  .navbar-brand {
+    padding: 15px !important;
+  }
+  .NileArtGalleryMenu {
+    .navbar-nav > li {
+      /* float: left; */
+      // display: inline-block;
+      // margin-left: auto;
+      // margin-right: auto;
+      // width: 120px;
+    }
+  }
+  a {
+    width: 100px;
+  }
+  a:hover,
+  a:focus,
+  a:active {
+    text-decoration: none !important;
+    background-color: rgb(231, 231, 231) !important;
+  }
+  //   .NileArtGalleryNav {
+  //     display: flex;
+  //     width: 100%;
+  //     li {
+  //       margin-left: auto;
+  //       margin-right: auto;
+  //     }
+  //   }
+  .navHeader {
+    width: 100%;
+    text-align: center;
+    height: 55px;
+    line-height: 55px;
+  }
+}
 // AboutUa Page
-
-
-.aboutUsContainer{
-  .logoAboutusHidden{
+.aboutUsContainer {
+  .logoAboutusHidden {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
   }
-   .bioParagraph{
-     padding: 10px 20px;
-   }
-   .logoAboutus{
-     width: 200px;
-     margin-top: -40px;
-     margin-left: 15px;
-   }
+  .bioParagraph {
+    padding: 10px 20px;
+  }
+  .logoAboutus {
+    width: 200px;
+    margin-top: -40px;
+    margin-left: 15px;
+  }
 }

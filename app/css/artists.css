@@ -5,14 +5,16 @@
   .artistsMenuContainer .artistsMenu {
     padding: 5px; }
     .artistsMenuContainer .artistsMenu li {
-      padding: 5px;
-      line-height: 30px;
+      text-align: center;
+      line-height: 20px;
       list-style-type: none;
       background-color: #b1b1b1;
-      cursor: move; }
-    .artistsMenuContainer .artistsMenu li:hover {
+      cursor: pointer; }
+    .artistsMenuContainer .artistsMenu li:hover, .artistsMenuContainer .artistsMenu li:focus, .artistsMenuContainer .artistsMenu li:active {
       background-color: white; }
 
 .artistBio {
   background-color: #d2d4d3;
   padding: 30px; }
+  .artistBio .artistImg {
+    height: 120px; }

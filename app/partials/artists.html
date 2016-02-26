@@ -14,20 +14,36 @@
               <span class="caret"></span>
             </button>
             <ul class="dropdown-menu col-xs-12" aria-labelledby="dropdownMenu1">
-              <li ng-repeat='artist in Artists' ng-click="showArtistBio($index); hideDefaultBio()">{{artist.name}}</li>
+              <li ng-repeat='artist in Artists' ng-click="showArtistBio($index); hideDefaultBio();">{{artist.name}}</li>
             </ul>
           </div>
         </div>
       </div>
     </div>
     <div class="col-xs-12 col-sm-8 col-md-9 artistBio borderInspect">
-      <p>
-        {{bio}}
-      </p>
-      <p ng-show="showDefaultBio">
-        {{Artists[0].bio}}
-      </p>
+    <div class="row borderInspect">
+      <div class="col-xs-12">
+        <img class="artistImg pull-right" ng-src="{{artistImg}}" alt="{{artisName}}" />
+        <img class="artistImg pull-right" ng-show="showDefaultBio" ng-src="{{Artists[0].image}}" alt="{{artisName}}" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 ng-show="showDefaultBio">{{Artists[0].name}}</h1>
+        <h1>{{artistName}}</h1>
+      </div>
+    </div>
+    <div class="row borderInspect">
+      <div class="col-xs-12">
+        <p>
+          {{artistBio}}
+        </p>
+        <p ng-show="showDefaultBio">
+          {{Artists[0].bio}}
+        </p>
 
+      </div>
+    </div>
     </div>
   </div>
 </div>
