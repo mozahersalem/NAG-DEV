@@ -7,7 +7,7 @@ var NileArtGallery = angular.module('NileArtGallery', [
     'angular-carousel',
     'ngTouch'
   ])
-  .config(['$routeProvider', function($routeProvider) {
+  .config(['$routeProvider', function($routeProvider, $locationProvider){) {
     $routeProvider.when('/exhibitions', {
       templateUrl: 'partials/exhibitions.html',
       controller: ''
@@ -35,4 +35,5 @@ var NileArtGallery = angular.module('NileArtGallery', [
     $routeProvider.otherwise({
       redirectTo: '/home'
     });
+    $locationProvider.html5Mode(true); //activate HTML5 Mode
   }]);
