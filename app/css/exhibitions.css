@@ -4,8 +4,10 @@
   .ExhibitionsContainer .exhibitionMenu li {
     line-height: 60px;
     border: 1px solid red; }
+  .ExhibitionsContainer .exhibitionMenu .menuTitle {
+    background-color: #aaaaaa; }
   .ExhibitionsContainer .exhibitionMenu li:hover {
-    background-color: blue; }
+    background-color: #aaaaaa; }
 
 .ExhibitionsContainer .exhibitionThumbnails {
   height: 120px;

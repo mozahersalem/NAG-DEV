@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('NileArtGallery').controller('ExhibitionsController', ['$scope', function($scope) {
-  $scope.Exhibitions = [{
+  $scope.ExhibitionsCurrent = [{
     "name": "Visual Memories",
     "creator": "Nagi Farid",
     "date": "27/1/2016",
@@ -19,6 +19,17 @@ angular.module('NileArtGallery').controller('ExhibitionsController', ['$scope', 
       "images/Exhibitions/NagiFarid/NagiFarid_10.jpg"
     ]
   }, {
+    "name": "On the Edge",
+    "creator": "Salah El- Meligy",
+    "date": "10/5/2015",
+    "mainImage": "images/Exhibitions/SalahElmeligy/SalahElmeligy_main.jpg",
+    "images": [
+      "images/Exhibitions/SalahElmeligy/SalahElmeligy_01.jpg",
+      "images/Exhibitions/SalahElmeligy/SalahElmeligy_02.jpg",
+      "images/Exhibitions/SalahElmeligy/SalahElmeligy_03.jpg"
+    ]
+  }];
+  $scope.Exhibitions = [{
     "name": "The Im-Possibelitites",
     "creator": "Noha Nagi",
     "date": "21/10/5015",
@@ -75,8 +86,23 @@ angular.module('NileArtGallery').controller('ExhibitionsController', ['$scope', 
       "images/Exhibitions/Suheil/Suheil_27.jpg"
     ]
   }];
+  $scope.showExhibitionCurrent = function($index) {
+    $scope.count = $index;
+    $scope.exhibitionCurrent = $scope.ExhibitionsCurrent[$index];
+    $scope.exhibition = $scope.ExhibitionsCurrent[$index];
+    $scope.mainImage = $scope.ExhibitionsCurrent[$index].mainImage;
+    $scope.name = $scope.ExhibitionsCurrent[$index].name;
+    $scope.creator = $scope.ExhibitionsCurrent[$index].creator;
+    $scope.date = $scope.ExhibitionsCurrent[$index].date;
+    $scope.images = $scope.ExhibitionsCurrent[$index].images;
+    // console.log($scope.exhibition);
+    // console.log($scope.count);
+    // console.log($scope.exhibitionName);
+    // console.log($scope.images);
+  };
   $scope.showExhibition = function($index) {
     $scope.count = $index;
+    $scope.exhibitionCurrent = $scope.ExhibitionsCurrent[$index];
     $scope.exhibition = $scope.Exhibitions[$index];
     $scope.mainImage = $scope.Exhibitions[$index].mainImage;
     $scope.name = $scope.Exhibitions[$index].name;
