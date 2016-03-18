@@ -1,10 +1,15 @@
 // Layout Page
 .borderInspect {
-  // border: 1px solid rgb(0, 255, 255);
+  border: 1px solid rgb(0, 255, 255);
 }
 .container {
   min-width: 360px;
 }
+.centerText{
+  text-align: center;
+}
+
+
 // main nav
 .indexNav {
   // height: 120px;
@@ -69,4 +74,12 @@
     margin-top: -40px;
     margin-left: 15px;
   }
+}
+
+
+// Sotre Page
+.storeImage{
+  height: 200px;
+  width: auto;
+  border-radius: 5px
 }

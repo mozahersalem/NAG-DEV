@@ -1,0 +1,6 @@
+(1) Bronze 35x22x8
+(2) Bronze 42x24x15
+(3) Bronze 16x14x15
+(4) Bronze 100x35x35
+(5) Bronze 20x18x93
+(6) Bronze 25x14x8

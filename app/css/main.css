@@ -1,5 +1,11 @@
+.borderInspect {
+  border: 1px solid cyan; }
+
 .container {
   min-width: 360px; }
+
+.centerText {
+  text-align: center; }
 
 @media (min-width: 768px) {
   .navbar-nav,
@@ -37,6 +43,11 @@
   width: 200px;
   margin-top: -40px;
   margin-left: 15px; }
+
+.storeImage {
+  height: 200px;
+  width: auto;
+  border-radius: 5px; }
 
 .artistsMenuContainer .artistsMenu {
   padding: 5px;
