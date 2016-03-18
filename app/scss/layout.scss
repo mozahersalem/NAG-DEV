@@ -1,6 +1,6 @@
 // Layout Page
 .borderInspect {
-  border: 1px solid rgb(0, 255, 255);
+  // border: 1px solid rgb(0, 255, 255);
 }
 .container {
   min-width: 360px;
@@ -78,8 +78,15 @@
 
 
 // Sotre Page
-.storeImage{
-  height: 200px;
-  width: auto;
-  border-radius: 5px
+.imageContainer{
+  height: 400px;
+  .storeImage{
+    height: 250px !important;
+    width: auto;
+    border-radius: 5px;
+    margin-top: 15px;
+  }
+}
+.imageContainer:hover{
+  background-color: #f8f8f8;
 }

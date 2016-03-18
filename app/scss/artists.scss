@@ -15,9 +15,16 @@
       background-color: rgb(255, 255, 255);
       cursor: pointer;
       border-top: 1px solid rgb(139, 139, 139);
-    }
-    li:hover, li:focus, li:active{
-      background-color: rgb(173, 173, 173);
+      a{
+        display: block;
+        width: auto;
+        height: auto;
+        color: #000;
+        padding-left: 10px;
+      }
+      a:hover, a:focus, a:active{
+        background-color: rgb(173, 173, 173);
+      }
     }
   }
 }

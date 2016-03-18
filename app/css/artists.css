@@ -8,8 +8,14 @@
     background-color: white;
     cursor: pointer;
     border-top: 1px solid #8b8b8b; }
-  .artistsMenuContainer .artistsMenu li:hover, .artistsMenuContainer .artistsMenu li:focus, .artistsMenuContainer .artistsMenu li:active {
-    background-color: #adadad; }
+    .artistsMenuContainer .artistsMenu li a {
+      display: block;
+      width: auto;
+      height: auto;
+      color: #000;
+      padding-left: 10px; }
+    .artistsMenuContainer .artistsMenu li a:hover, .artistsMenuContainer .artistsMenu li a:focus, .artistsMenuContainer .artistsMenu li a:active {
+      background-color: #adadad; }
 
 .artistBio {
   background-color: #d2d4d3;

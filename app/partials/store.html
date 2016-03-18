@@ -1,7 +1,7 @@
 <div class="container" ng-controller="StoreController">
 	<div class="row">
-		<div class="col-md-3 borderInspect" ng-repeat="item in storeItems">
-			<div class="thumbnail centerText">
+		<div class="col-sm-6 col-md-4 borderInspect" ng-repeat="item in storeItems">
+			<div class="thumbnail imageContainer centerText">
 				<img class="img-responsive storeImage" ng-src={{item.img}} alt="...">
 				<div class="caption">
 					<h3>{{item.artistName}}</h3>

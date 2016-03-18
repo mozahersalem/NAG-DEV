@@ -6,7 +6,7 @@
       <div class="row">
         <div class="artistsMenuContainer">
           <ul class="artistsMenu hidden-xs">
-            <li class="" ng-repeat='artist in Artists' ng-click="showArtistBio($index); hideDefaultBio()">{{artist.name}}</li>
+            <li class="" ng-repeat='artist in Artists' ng-click="showArtistBio($index); hideDefaultBio()"><a href="">{{artist.name}}</a></li>
           </ul>
           <div class="dropdown col-xs-12 artistsMenu visible-xs">
             <button class="btn btn-default btn-block dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -14,7 +14,7 @@
               <span class="caret"></span>
             </button>
             <ul class="dropdown-menu col-xs-12" aria-labelledby="dropdownMenu1">
-              <li ng-repeat='artist in Artists' ng-click="showArtistBio($index); hideDefaultBio();">{{artist.name}}</li>
+              <li ng-repeat='artist in Artists' ng-click="showArtistBio($index); hideDefaultBio();"><a href="">{{artist.name}}</a></li>
             </ul>
           </div>
         </div>

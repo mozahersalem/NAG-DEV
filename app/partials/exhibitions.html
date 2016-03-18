@@ -4,9 +4,9 @@
     <div class="col-md-2 hidden-xs hidden-sm">
       <ul  class="exhibitionMenu">
         <li class="menuTitle">Current</li>
-        <li ng-repeat="exhibition in ExhibitionsCurrent" ng-click="showExhibitionCurrent($index); hideDefaultExhibition();">{{exhibition.creator}}</li>
+        <li ng-repeat="exhibition in ExhibitionsCurrent" ng-click="showExhibitionCurrent($index); hideDefaultExhibition();"><a href="">{{exhibition.creator}}</a></li>
         <li class="menuTitle">Past</li>
-        <li ng-repeat="exhibition in Exhibitions" ng-click="showExhibition($index); hideDefaultExhibition();">{{exhibition.creator}}</li>
+        <li ng-repeat="exhibition in Exhibitions" ng-click="showExhibition($index); hideDefaultExhibition();"><a href="">{{exhibition.creator}}</a></li>
       </ul>
     </div>
     <!-- Exhibitions menu for smal devices only -->

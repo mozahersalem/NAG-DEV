@@ -1,6 +1,3 @@
-.borderInspect {
-  border: 1px solid cyan; }
-
 .container {
   min-width: 360px; }
 
@@ -44,10 +41,16 @@
   margin-top: -40px;
   margin-left: 15px; }
 
-.storeImage {
-  height: 200px;
-  width: auto;
-  border-radius: 5px; }
+.imageContainer {
+  height: 400px; }
+  .imageContainer .storeImage {
+    height: 250px !important;
+    width: auto;
+    border-radius: 5px;
+    margin-top: 15px; }
+
+.imageContainer:hover {
+  background-color: #f8f8f8; }
 
 .artistsMenuContainer .artistsMenu {
   padding: 5px;
@@ -59,8 +62,14 @@
     background-color: white;
     cursor: pointer;
     border-top: 1px solid #8b8b8b; }
-  .artistsMenuContainer .artistsMenu li:hover, .artistsMenuContainer .artistsMenu li:focus, .artistsMenuContainer .artistsMenu li:active {
-    background-color: #adadad; }
+    .artistsMenuContainer .artistsMenu li a {
+      display: block;
+      width: auto;
+      height: auto;
+      color: #000;
+      padding-left: 10px; }
+    .artistsMenuContainer .artistsMenu li a:hover, .artistsMenuContainer .artistsMenu li a:focus, .artistsMenuContainer .artistsMenu li a:active {
+      background-color: #adadad; }
 
 .artistBio {
   background-color: #d2d4d3;
@@ -108,14 +117,23 @@
       height: 300px; } }
 
 .ExhibitionsContainer .exhibitionMenu {
-  list-style-type: none;
-  padding: 0; }
+  padding: 5px; }
   .ExhibitionsContainer .exhibitionMenu li {
-    line-height: 60px;
-    border: 1px solid red; }
+    padding: 0 10px;
+    line-height: 20px;
+    list-style-type: none;
+    background-color: white;
+    cursor: pointer;
+    border-top: 1px solid #8b8b8b; }
+    .ExhibitionsContainer .exhibitionMenu li a {
+      display: block;
+      width: auto;
+      height: auto;
+      color: #000;
+      padding-left: 10px; }
+    .ExhibitionsContainer .exhibitionMenu li a:hover, .ExhibitionsContainer .exhibitionMenu li a:focus, .ExhibitionsContainer .exhibitionMenu li a:active {
+      background-color: #adadad; }
   .ExhibitionsContainer .exhibitionMenu .menuTitle {
-    background-color: #aaaaaa; }
-  .ExhibitionsContainer .exhibitionMenu li:hover {
     background-color: #aaaaaa; }
 
 .ExhibitionsContainer .exhibitionThumbnails {
