@@ -1,10 +1,15 @@
 // Layout Page
 .borderInspect {
-  border: 1px solid rgb(0, 255, 255);
+  // border: 1px solid rgb(0, 255, 255);
 }
 .container {
   min-width: 360px;
 }
+.centerText{
+  text-align: center;
+}
+
+
 // main nav
 .indexNav {
   // height: 120px;
@@ -54,7 +59,7 @@
     line-height: 55px;
   }
 }
-// AboutUa Page
+// AboutUs Page
 .aboutUsContainer {
   .logoAboutusHidden {
     margin-left: auto;
@@ -69,4 +74,19 @@
     margin-top: -40px;
     margin-left: 15px;
   }
+}
+
+
+// Sotre Page
+.imageContainer{
+  height: 400px;
+  .storeImage{
+    height: 250px !important;
+    width: auto;
+    border-radius: 5px;
+    margin-top: 15px;
+  }
+}
+.imageContainer:hover{
+  background-color: #f8f8f8;
 }

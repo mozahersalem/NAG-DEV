@@ -3,10 +3,10 @@
   <!-- <p>This is the partial for Artist.</p> -->
   <div class="row">
     <div class="col-xs-12 col-sm-4 col-md-3">
-      <div class="row borderInspect">
-        <div class="artistsMenuContainer borderInspect">
+      <div class="row">
+        <div class="artistsMenuContainer">
           <ul class="artistsMenu hidden-xs">
-            <li class="borderInspect" ng-repeat='artist in Artists' ng-click="showArtistBio($index); hideDefaultBio()">{{artist.name}}</li>
+            <li class="" ng-repeat='artist in Artists' ng-click="showArtistBio($index); hideDefaultBio()"><a href="">{{artist.name}}</a></li>
           </ul>
           <div class="dropdown col-xs-12 artistsMenu visible-xs">
             <button class="btn btn-default btn-block dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -14,36 +14,38 @@
               <span class="caret"></span>
             </button>
             <ul class="dropdown-menu col-xs-12" aria-labelledby="dropdownMenu1">
-              <li ng-repeat='artist in Artists' ng-click="showArtistBio($index); hideDefaultBio();">{{artist.name}}</li>
+              <li ng-repeat='artist in Artists' ng-click="showArtistBio($index); hideDefaultBio();"><a href="">{{artist.name}}</a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-    <div class="col-xs-12 col-sm-8 col-md-9 artistBio borderInspect">
-    <div class="row borderInspect">
-      <div class="col-xs-12">
-        <img class="artistImg pull-right" ng-src="{{artistImg}}" alt="{{artisName}}" />
-        <img class="artistImg pull-right" ng-show="showDefaultBio" ng-src="{{Artists[0].image}}" alt="{{artisName}}" />
+    <div class="col-xs-12 col-sm-8 col-md-9 artistBio">
+      <div class="row">
+        <hr class="imgBackLine">
+        <div class="col-xs-8 col-xs-offset-2">
+          <img class="artistImg" ng-show="!showDefaultBio" ng-src="{{artistImg}}" alt="{{artisName}}"/>
+          <img class="artistImg" ng-show="showDefaultBio" ng-src="{{Artists[0].image}}" alt="{{artisName}}"/>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12">
-        <h1 ng-show="showDefaultBio">{{Artists[0].name}}</h1>
-        <h1>{{artistName}}</h1>
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 ng-show="showDefaultBio">{{Artists[0].name}}</h1>
+          <h1>{{artistName}}</h1>
+          <hr class="nameUnderLine">
+        </div>
       </div>
-    </div>
-    <div class="row borderInspect">
-      <div class="col-xs-12">
-        <p>
-          {{artistBio}}
-        </p>
-        <p ng-show="showDefaultBio">
-          {{Artists[0].bio}}
-        </p>
+      <div class="row">
+        <div class="col-xs-12">
+          <p>
+            {{artistBio}}
+          </p>
+          <p ng-show="showDefaultBio">
+            {{Artists[0].bio}}
+          </p>
 
+        </div>
       </div>
-    </div>
     </div>
   </div>
 </div>

@@ -1,21 +1,30 @@
 // Artists Page
 .artistsMenuContainer {
-  max-height: 450px;
+  // max-height: 450px;
   // overflow-y: scroll;
-  min-width: 200px;
-  text-align: left;
+  // min-width: 200px;
+  // text-align: left;
   .artistsMenu {
     padding: 5px;
+    margin-right: 50px;
     li {
-      // padding: 5px;
-      text-align: center;
+      padding: 0 10px;
+      // text-align: center;
       line-height: 20px;
       list-style-type: none;
-      background-color: rgb(177, 177, 177);
-      cursor: pointer;
-    }
-    li:hover, li:focus, li:active{
       background-color: rgb(255, 255, 255);
+      cursor: pointer;
+      border-top: 1px solid rgb(139, 139, 139);
+      a{
+        display: block;
+        width: auto;
+        height: auto;
+        color: #000;
+        padding-left: 10px;
+      }
+      a:hover, a:focus, a:active{
+        background-color: rgb(173, 173, 173);
+      }
     }
   }
 }
@@ -24,6 +33,22 @@
   padding: 30px;
   .artistImg{
     height: 120px;
+    border: 5px solid rgb(152, 152, 152);
+    border-radius: 5px;
+  }
+  .imgBackLine{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 65px;
+    border-width: 3px;
+    border-color: rgb(152, 152, 152);
+  }
+  .nameUnderLine{
+    margin: 0;
+    padding: 0;
+    border-width: 2px;
+    border-color: rgb(255, 0, 0);
   }
 }
 //

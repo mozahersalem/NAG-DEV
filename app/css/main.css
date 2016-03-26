@@ -1,8 +1,8 @@
-.borderInspect {
-  border: 1px solid cyan; }
-
 .container {
   min-width: 360px; }
+
+.centerText {
+  text-align: center; }
 
 @media (min-width: 768px) {
   .navbar-nav,
@@ -41,26 +41,55 @@
   margin-top: -40px;
   margin-left: 15px; }
 
-.artistsMenuContainer {
-  max-height: 450px;
-  min-width: 200px;
-  text-align: left; }
-  .artistsMenuContainer .artistsMenu {
-    padding: 5px; }
-    .artistsMenuContainer .artistsMenu li {
-      text-align: center;
-      line-height: 20px;
-      list-style-type: none;
-      background-color: #b1b1b1;
-      cursor: pointer; }
-    .artistsMenuContainer .artistsMenu li:hover, .artistsMenuContainer .artistsMenu li:focus, .artistsMenuContainer .artistsMenu li:active {
-      background-color: white; }
+.imageContainer {
+  height: 400px; }
+  .imageContainer .storeImage {
+    height: 250px !important;
+    width: auto;
+    border-radius: 5px;
+    margin-top: 15px; }
+
+.imageContainer:hover {
+  background-color: #f8f8f8; }
+
+.artistsMenuContainer .artistsMenu {
+  padding: 5px;
+  margin-right: 50px; }
+  .artistsMenuContainer .artistsMenu li {
+    padding: 0 10px;
+    line-height: 20px;
+    list-style-type: none;
+    background-color: white;
+    cursor: pointer;
+    border-top: 1px solid #8b8b8b; }
+    .artistsMenuContainer .artistsMenu li a {
+      display: block;
+      width: auto;
+      height: auto;
+      color: #000;
+      padding-left: 10px; }
+    .artistsMenuContainer .artistsMenu li a:hover, .artistsMenuContainer .artistsMenu li a:focus, .artistsMenuContainer .artistsMenu li a:active {
+      background-color: #adadad; }
 
 .artistBio {
   background-color: #d2d4d3;
   padding: 30px; }
   .artistBio .artistImg {
-    height: 120px; }
+    height: 120px;
+    border: 5px solid #989898;
+    border-radius: 5px; }
+  .artistBio .imgBackLine {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 65px;
+    border-width: 3px;
+    border-color: #989898; }
+  .artistBio .nameUnderLine {
+    margin: 0;
+    padding: 0;
+    border-width: 2px;
+    border-color: red; }
 
 .sliderContainer {
   height: 600px; }
@@ -88,13 +117,24 @@
       height: 300px; } }
 
 .ExhibitionsContainer .exhibitionMenu {
-  list-style-type: none;
-  padding: 0; }
+  padding: 5px; }
   .ExhibitionsContainer .exhibitionMenu li {
-    line-height: 60px;
-    border: 1px solid red; }
-  .ExhibitionsContainer .exhibitionMenu li:hover {
-    background-color: blue; }
+    padding: 0 10px;
+    line-height: 20px;
+    list-style-type: none;
+    background-color: white;
+    cursor: pointer;
+    border-top: 1px solid #8b8b8b; }
+    .ExhibitionsContainer .exhibitionMenu li a {
+      display: block;
+      width: auto;
+      height: auto;
+      color: #000;
+      padding-left: 10px; }
+    .ExhibitionsContainer .exhibitionMenu li a:hover, .ExhibitionsContainer .exhibitionMenu li a:focus, .ExhibitionsContainer .exhibitionMenu li a:active {
+      background-color: #adadad; }
+  .ExhibitionsContainer .exhibitionMenu .menuTitle {
+    background-color: #aaaaaa; }
 
 .ExhibitionsContainer .exhibitionThumbnails {
   height: 120px;

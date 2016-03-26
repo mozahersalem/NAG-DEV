@@ -1,12 +1,16 @@
 <div class="container ExhibitionsContainer" ng-controller="ExhibitionsController">
-  <div class="row borderInspect">
+  <div class="row">
     <!-- exhibition menu -->
-    <div class="col-md-2 hidden-xs borderInspect">
-      <ul  class="exhibitionMenu borderInspect">
-        <li ng-repeat="exhibition in Exhibitions" ng-click="showExhibition($index); hideDefaultExhibition();">{{exhibition.creator}}</li>
+    <div class="col-md-2 hidden-xs hidden-sm">
+      <ul  class="exhibitionMenu">
+        <li class="menuTitle">Current</li>
+        <li ng-repeat="exhibition in ExhibitionsCurrent" ng-click="showExhibitionCurrent($index); hideDefaultExhibition();"><a href="">{{exhibition.creator}}</a></li>
+        <li class="menuTitle">Past</li>
+        <li ng-repeat="exhibition in Exhibitions" ng-click="showExhibition($index); hideDefaultExhibition();"><a href="">{{exhibition.creator}}</a></li>
       </ul>
     </div>
-    <div class="col-xs-12 exhibitionsMenuDropDown visible-xs">
+    <!-- Exhibitions menu for smal devices only -->
+    <div class="col-xs-12 exhibitionsMenuDropDown visible-xs visible-sm">
       <div class="dropdown">
         <button class="btn btn-default btn-block dropdown-toggle" type="button" id="exhibitionDropdwounMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
           Exhibitions
@@ -21,7 +25,7 @@
 
     <!-- Default main exibition image -->
     <div class="col-xs-12 col-md-5" ng-show="showDefaultExhibition">
-      <img ng-src="{{Exhibitions[0].mainImage}}" class="img-responsive" alt=""/>
+      <img ng-src="{{ExhibitionsCurrent[0].mainImage}}" class="img-responsive" alt=""/>
     </div>
     <!-- END Default main exibition image -->
 
@@ -36,7 +40,7 @@
       <div class="row">
         <div class="col-xs-12">
           <p>
-            {{Exhibitions[0].name}}
+            {{ExhibitionsCurrent[0].name}}
           </p>
         </div>
       </div>
@@ -46,20 +50,20 @@
             by
           </p>
           <p>
-            {{Exhibitions[0].creator}}
+            {{ExhibitionsCurrent[0].creator}}
           </p>
         </div>
       </div>
       <div class="row">
         <div class="col-xs-12">
           <p>
-            {{Exhibitions[0].date | date}}
+            {{ExhibitionsCurrent[0].date | date}}
           </p>
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-12 borderInspect">
-          <img ng-src="{{img}}" ng-repeat="img in Exhibitions[0].images" class="img-rounded exhibitionThumbnails" alt=""/>
+        <div class="col-xs-12">
+          <img ng-src="{{img}}" ng-repeat="img in ExhibitionsCurrent[0].images" class="img-rounded exhibitionThumbnails" alt=""/>
         </div>
       </div>
     </div>
@@ -92,7 +96,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12 borderInspect">
+        <div class="col-md-12">
           <img ng-src="{{img}}" ng-repeat="img in images" class="img-rounded exhibitionThumbnails" alt=""/>
         </div>
       </div>
