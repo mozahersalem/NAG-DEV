@@ -4,6 +4,9 @@
 .centerText {
   text-align: center; }
 
+.fullHeight {
+  height: 100%; }
+
 @media (min-width: 768px) {
   .navbar-nav,
   .navbar-nav li {
@@ -92,13 +95,17 @@
     border-color: red; }
 
 .sliderContainer {
-  height: 600px; }
+  height: 500px; }
   .sliderContainer .carousel {
-    height: 600px; }
+    height: 500px; }
     .sliderContainer .carousel .slide {
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain; }
+    .sliderContainer .carousel img {
+      max-height: 500px;
+      margin-left: auto;
+      margin-right: auto; }
   .sliderContainer .carouselIndicators {
     text-align: center; }
     .sliderContainer .carouselIndicators .rn-carousel-indicator {

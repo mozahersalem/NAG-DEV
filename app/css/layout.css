@@ -4,6 +4,9 @@
 .centerText {
   text-align: center; }
 
+.fullHeight {
+  height: 100%; }
+
 @media (min-width: 768px) {
   .navbar-nav,
   .navbar-nav li {
