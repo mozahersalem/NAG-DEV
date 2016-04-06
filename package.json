@@ -13,8 +13,10 @@
   },
   "devDependencies": {
     "browser-sync": "^2.11.1",
+    "event-stream": "^3.3.2",
     "gulp": "^3.9.0",
     "gulp-cache": "^0.4.2",
+    "gulp-concat": "^2.6.0",
     "gulp-if": "^2.0.0",
     "gulp-imagemin": "^2.4.0",
     "gulp-sass": "^2.2.0",
