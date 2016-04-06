@@ -1,13 +1,16 @@
-<!-- <artists-menu></artists-menu> -->
 <div class="container" ng-controller="ArtistsController">
-  <!-- <p>This is the partial for Artist.</p> -->
+  <!-- start main row -->
   <div class="row">
-    <div class="col-xs-12 col-sm-4 col-md-3">
+
+    <!-- the  artist menu section -->
+    <div class="col-xs-12 col-sm-4 col-md-3 borderInspect">
       <div class="row">
         <div class="artistsMenuContainer">
+          <!-- menu for tablet and desktop -->
           <ul class="artistsMenu hidden-xs">
             <li class="" ng-repeat='artist in Artists' ng-click="showArtistBio($index); hideDefaultBio()"><a href="">{{artist.name}}</a></li>
           </ul>
+          <!-- menu for small screen devices -->
           <div class="dropdown col-xs-12 artistsMenu visible-xs">
             <button class="btn btn-default btn-block dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
               Artists
@@ -17,35 +20,87 @@
               <li ng-repeat='artist in Artists' ng-click="showArtistBio($index); hideDefaultBio();"><a href="">{{artist.name}}</a></li>
             </ul>
           </div>
+
         </div>
       </div>
     </div>
-    <div class="col-xs-12 col-sm-8 col-md-9 artistBio">
-      <div class="row">
+
+    <!-- the  artist bio section -->
+    <div class="col-xs-12 col-sm-8 col-md-9 artistBio borderInspect">
+
+      <!-- artist image section -->
+      <div class="row borderInspect">
         <hr class="imgBackLine">
         <div class="col-xs-8 col-xs-offset-2">
           <img class="artistImg" ng-show="!showDefaultBio" ng-src="{{artistImg}}" alt="{{artisName}}"/>
           <img class="artistImg" ng-show="showDefaultBio" ng-src="{{Artists[0].image}}" alt="{{artisName}}"/>
         </div>
       </div>
-      <div class="row">
+      <!-- end artist image section -->
+
+      <!-- artist name section -->
+      <div class="row borderInspect">
         <div class="col-xs-12">
-          <h1 ng-show="showDefaultBio">{{Artists[0].name}}</h1>
-          <h1>{{artistName}}</h1>
-          <hr class="nameUnderLine">
+          <h3>{{artistName}}</h3>
+          <h3 ng-show="showDefaultBio">{{Artists[0].name}}</h3>
+          <!-- <hr class="nameUnderLine"> -->
         </div>
       </div>
-      <div class="row">
-        <div class="col-xs-12">
-          <p>
-            {{artistBio}}
-          </p>
-          <p ng-show="showDefaultBio">
-            {{Artists[0].bio}}
-          </p>
+      <!-- end artist name section -->
 
+      <!-- artist bio section -->
+      <!-- artist bio default view -->
+      <div class="row" ng-show="showDefaultBio">
+        <div class="col-xs-12">
+          <!-- bio row -->
+          <div class="row borderInspect">
+           <div class="col-xs-12">
+            <h4>BIOGRAPHY</h4>
+            <p class="col-sm-10">
+              {{Artists[0].bio}}
+            </p>
+          </div>
+        </div>
+        <!-- end bio row -->
+        <!-- exhibition row -->
+        <div class="row borderInspect">
+          <div class="col-xs-12">
+            <h4>EXHIBITIONS</h4>
+            <ul>
+              <li ng-repeat="exhibition in Artists[0].exhibitios">{{exhibition}}</li>
+            </ul>
+          </div>
+        </div>
+        <!-- end exhibition row -->
+      </div>
+    </div>
+    <!-- end artist bio default view -->
+
+    <!-- artist bio dynamic view -->
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="row borderInspect">
+          <div class="col-xs-12">
+            <h4 ng-hide="showDefaultBio">BIOGRAPHY</h4>
+            <p class="col-sm-10">{{artistBio}}</p>
+          </div>
+        </div>
+        <div class="row borderInspect">
+          <div class="col-xs-12">
+            <h4 ng-hide="showDefaultBio">EXHIBITIONS</h4>
+            <ul>
+              <li ng-repeat="exhibition in artisteExhibitios">{{exhibition}}</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
+    <!-- end artist bio dynamic view -->
   </div>
+  <!-- end artist bio section -->
 </div>
+<!-- end the artist bio section -->
+</div>
+<!-- end main row -->
+</div> 
+<!-- end container -->

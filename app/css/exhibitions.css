@@ -2,7 +2,7 @@
   padding: 5px; }
   .ExhibitionsContainer .exhibitionMenu li {
     padding: 0 10px;
-    line-height: 20px;
+    line-height: 25px;
     list-style-type: none;
     background-color: white;
     cursor: pointer;
@@ -13,20 +13,20 @@
       height: auto;
       color: #000;
       padding-left: 10px; }
-    .ExhibitionsContainer .exhibitionMenu li a:hover, .ExhibitionsContainer .exhibitionMenu li a:focus, .ExhibitionsContainer .exhibitionMenu li a:active {
-      background-color: #adadad; }
   .ExhibitionsContainer .exhibitionMenu .menuTitle {
-    background-color: #aaaaaa; }
+    cursor: inherit;
+    padding: 1px 5px;
+    background-color: #eee; }
 
 .ExhibitionsContainer .exhibitionThumbnails {
   height: 120px;
   margin: 5px; }
 
 .ExhibitionsContainer .exhibitionDetails {
-  text-align: center; }
+  text-align: center;
+  background-color: #eee;
+  padding: 10px 0;
+  border-radius: 5px; }
 
-.ExhibitionsContainer .exhibitionsMenuDropDown {
-  margin-bottom: 10px; }
-  .ExhibitionsContainer .exhibitionsMenuDropDown ul {
-    text-align: center;
-    margin-top: 5px; }
+.ExhibitionsContainer .mainImage {
+  margin: 10px 0; }

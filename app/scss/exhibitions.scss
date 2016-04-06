@@ -2,11 +2,9 @@
 .ExhibitionsContainer{
   .exhibitionMenu{
     padding: 5px;
-    // margin-right: 50px;
     li{
       padding: 0 10px;
-      // text-align: center;
-      line-height: 20px;
+      line-height: 25px;
       list-style-type: none;
       background-color: rgb(255, 255, 255);
       cursor: pointer;
@@ -18,12 +16,11 @@
         color: #000;
         padding-left: 10px;
       }
-      a:hover, a:focus, a:active{
-        background-color: rgb(173, 173, 173);
-      }
     }
     .menuTitle{
-      background-color: rgb(170, 170, 170);
+      cursor: inherit;
+      padding: 1px 5px;
+      background-color: #eee;
     }
   }
   .exhibitionThumbnails{
@@ -32,13 +29,11 @@
   }
   .exhibitionDetails{
     text-align: center;
-    // margin: 10px 0;
+    background-color: #eee;
+    padding: 10px 0;
+    border-radius: 5px;
   }
-  .exhibitionsMenuDropDown{
-    margin-bottom: 10px;
-    ul{
-      text-align: center;
-      margin-top: 5px;
-    }
+  .mainImage{
+    margin: 10px 0;
   }
 }

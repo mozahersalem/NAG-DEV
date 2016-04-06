@@ -7,6 +7,9 @@ var gulpIf = require('gulp-if');
 var cssnano = require('gulp-cssnano');
 var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
+var es = require('event-stream');
+var concat = require('gulp-concat');
+
 
 // Requires the gulp-sass plugin
 gulp.task('sass', function() {
@@ -19,7 +22,7 @@ gulp.task('sass', function() {
 });
 
 // start the gulp watch and refresh the browser
-gulp.task('watch', ['browserSync', 'sass'], function (){
+gulp.task('watch', ['browserSync', 'sass', 'useref'], function (){
   gulp.watch('app/scss/**/*.scss', ['sass']);
   // Reloads the browser whenever HTML or JS files change
   gulp.watch('app/*.html', browserSync.reload);
@@ -44,10 +47,22 @@ gulp.task('useref', function(){
     .pipe(useref())
     .pipe(gulpIf('*.js', uglify()))
     // Minifies only if it's a CSS file
-    .pipe(gulpIf('*.css', cssnano()))
-    .pipe(gulp.dest('dist'))
+    .pipe(gulpIf('app/css/*.css', cssnano()))
+    .pipe(gulp.dest('dist'));
 });
 
+
+gulp.task('scripts', function () {
+
+  var javaScript = gulp.src('app/js/*.js');
+  var jsControllers = gulp.src('app/js/controllers/*.js');
+  var jsDirectives = gulp.src('app/js/directives/*.js');
+
+  return es.merge(javaScript, jsControllers, jsDirectives)
+  .pipe(concat('all.min.js'))
+  .pipe(uglify())
+  .pipe(gulp.dest('dist'));
+});
 
 // minify images
 gulp.task('images', function(){
@@ -56,5 +71,5 @@ gulp.task('images', function(){
   .pipe(cache(imagemin({
       interlaced: true
     })))
-  .pipe(gulp.dest('dist/images'))
+  .pipe(gulp.dest('dist/images'));
 });

@@ -14,8 +14,6 @@
       height: auto;
       color: #000;
       padding-left: 10px; }
-    .artistsMenuContainer .artistsMenu li a:hover, .artistsMenuContainer .artistsMenu li a:focus, .artistsMenuContainer .artistsMenu li a:active {
-      background-color: #adadad; }
 
 .artistBio {
   background-color: #d2d4d3;

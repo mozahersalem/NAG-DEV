@@ -109,10 +109,10 @@ angular.module('NileArtGallery').controller('ExhibitionsController', ['$scope', 
     $scope.creator = $scope.Exhibitions[$index].creator;
     $scope.date = $scope.Exhibitions[$index].date;
     $scope.images = $scope.Exhibitions[$index].images;
-    console.log($scope.exhibition);
-    console.log($scope.count);
-    console.log($scope.exhibitionName);
-    console.log($scope.images);
+    // console.log($scope.exhibition);
+    // console.log($scope.count);
+    // console.log($scope.exhibitionName);
+    // console.log($scope.images);
   };
   $scope.showDefaultExhibition = true;
   $scope.hideDefaultExhibition = function() {

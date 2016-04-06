@@ -1,0 +1,13 @@
+// Sotre Page
+.imageContainer{
+  height: 400px;
+  .storeImage{
+    height: 250px !important;
+    width: auto;
+    border-radius: 5px;
+    margin-top: 15px;
+  }
+}
+.imageContainer:hover{
+  background-color: #f8f8f8;
+}

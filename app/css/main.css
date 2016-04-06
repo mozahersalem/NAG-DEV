@@ -1,59 +1,14 @@
-.container {
-  min-width: 360px; }
-
 .centerText {
   text-align: center; }
 
 .fullHeight {
   height: 100%; }
 
-@media (min-width: 768px) {
-  .navbar-nav,
-  .navbar-nav li {
-    float: none !important;
-    text-align: center; }
-  .navbar-nav li {
-    display: inline-block !important; }
-  .navbar-brand {
-    padding: 15px !important; }
-  .NileArtGalleryMenu .navbar-nav > li {
-    /* float: left; */ }
-  a {
-    width: 100px; }
-  a:hover,
-  a:focus,
-  a:active {
-    text-decoration: none !important;
-    background-color: #e7e7e7 !important; }
-  .navHeader {
-    width: 100%;
-    text-align: center;
-    height: 55px;
-    line-height: 55px; } }
-
-.aboutUsContainer .logoAboutusHidden {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px; }
-
-.aboutUsContainer .bioParagraph {
-  padding: 10px 20px; }
-
-.aboutUsContainer .logoAboutus {
-  width: 200px;
-  margin-top: -40px;
-  margin-left: 15px; }
-
-.imageContainer {
-  height: 400px; }
-  .imageContainer .storeImage {
-    height: 250px !important;
-    width: auto;
-    border-radius: 5px;
-    margin-top: 15px; }
-
-.imageContainer:hover {
-  background-color: #f8f8f8; }
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none !important;
+  background-color: #e7e7e7 !important; }
 
 .artistsMenuContainer .artistsMenu {
   padding: 5px;
@@ -71,8 +26,6 @@
       height: auto;
       color: #000;
       padding-left: 10px; }
-    .artistsMenuContainer .artistsMenu li a:hover, .artistsMenuContainer .artistsMenu li a:focus, .artistsMenuContainer .artistsMenu li a:active {
-      background-color: #adadad; }
 
 .artistBio {
   background-color: #d2d4d3;
@@ -127,7 +80,7 @@
   padding: 5px; }
   .ExhibitionsContainer .exhibitionMenu li {
     padding: 0 10px;
-    line-height: 20px;
+    line-height: 25px;
     list-style-type: none;
     background-color: white;
     cursor: pointer;
@@ -138,20 +91,63 @@
       height: auto;
       color: #000;
       padding-left: 10px; }
-    .ExhibitionsContainer .exhibitionMenu li a:hover, .ExhibitionsContainer .exhibitionMenu li a:focus, .ExhibitionsContainer .exhibitionMenu li a:active {
-      background-color: #adadad; }
   .ExhibitionsContainer .exhibitionMenu .menuTitle {
-    background-color: #aaaaaa; }
+    cursor: inherit;
+    padding: 1px 5px;
+    background-color: #eee; }
 
 .ExhibitionsContainer .exhibitionThumbnails {
   height: 120px;
   margin: 5px; }
 
 .ExhibitionsContainer .exhibitionDetails {
-  text-align: center; }
+  text-align: center;
+  background-color: #eee;
+  padding: 10px 0;
+  border-radius: 5px; }
 
-.ExhibitionsContainer .exhibitionsMenuDropDown {
-  margin-bottom: 10px; }
-  .ExhibitionsContainer .exhibitionsMenuDropDown ul {
-    text-align: center;
-    margin-top: 5px; }
+.ExhibitionsContainer .mainImage {
+  margin: 10px 0; }
+
+@media (min-width: 767px) {
+  .navbar-nav,
+  .navbar-nav li {
+    float: none !important;
+    text-align: center; }
+  .navbar-nav li {
+    display: inline-block !important; }
+  .navbar-brand {
+    padding: 15px !important; }
+  .NileArtGalleryMenu .navbar-nav > li {
+    float: left;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto; }
+  .NileArtGalleryMenu a {
+    width: 110px; }
+  .NileArtGalleryMenu .navHeader {
+    width: 100%;
+    text-align: center; }
+    .NileArtGalleryMenu .navHeader a {
+      height: 50px;
+      padding: 15px 15px;
+      font-size: 18px;
+      line-height: 20px; }
+    .NileArtGalleryMenu .navHeader .navbarBrand {
+      display: block;
+      margin: auto;
+      width: 200px;
+      padding-left: 5px;
+      padding-right: 5px; } }
+
+.imageContainer {
+  height: 400px; }
+  .imageContainer .storeImage {
+    height: 250px !important;
+    width: auto;
+    border-radius: 5px;
+    margin-top: 15px; }
+
+.imageContainer:hover {
+  background-color: #f8f8f8; }

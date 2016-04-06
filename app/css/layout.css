@@ -1,56 +1,11 @@
-.container {
-  min-width: 360px; }
-
 .centerText {
   text-align: center; }
 
 .fullHeight {
   height: 100%; }
 
-@media (min-width: 768px) {
-  .navbar-nav,
-  .navbar-nav li {
-    float: none !important;
-    text-align: center; }
-  .navbar-nav li {
-    display: inline-block !important; }
-  .navbar-brand {
-    padding: 15px !important; }
-  .NileArtGalleryMenu .navbar-nav > li {
-    /* float: left; */ }
-  a {
-    width: 100px; }
-  a:hover,
-  a:focus,
-  a:active {
-    text-decoration: none !important;
-    background-color: #e7e7e7 !important; }
-  .navHeader {
-    width: 100%;
-    text-align: center;
-    height: 55px;
-    line-height: 55px; } }
-
-.aboutUsContainer .logoAboutusHidden {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px; }
-
-.aboutUsContainer .bioParagraph {
-  padding: 10px 20px; }
-
-.aboutUsContainer .logoAboutus {
-  width: 200px;
-  margin-top: -40px;
-  margin-left: 15px; }
-
-.imageContainer {
-  height: 400px; }
-  .imageContainer .storeImage {
-    height: 250px !important;
-    width: auto;
-    border-radius: 5px;
-    margin-top: 15px; }
-
-.imageContainer:hover {
-  background-color: #f8f8f8; }
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none !important;
+  background-color: #e7e7e7 !important; }
