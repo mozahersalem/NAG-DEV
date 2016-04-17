@@ -4,7 +4,7 @@
     padding: 0 10px;
     line-height: 25px;
     list-style-type: none;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
     cursor: pointer;
     border-top: 1px solid #8b8b8b; }
     .ExhibitionsContainer .exhibitionMenu li a {
@@ -16,17 +16,23 @@
   .ExhibitionsContainer .exhibitionMenu .menuTitle {
     cursor: inherit;
     padding: 1px 5px;
-    background-color: #eee; }
+    background-color: #b8b8b8; }
 
 .ExhibitionsContainer .exhibitionThumbnails {
   height: 120px;
   margin: 5px; }
+
+.ExhibitionsContainer .mainImgeContainer {
+  background-color: #dddddd;
+  margin-left: -10px;
+  margin-right: 10px;
+  border-radius: 5px; }
+  .ExhibitionsContainer .mainImgeContainer .mainImage {
+    margin: 10px 0;
+    border-radius: 5px; }
 
 .ExhibitionsContainer .exhibitionDetails {
   text-align: center;
   background-color: #eee;
   padding: 10px 0;
   border-radius: 5px; }
-
-.ExhibitionsContainer .mainImage {
-  margin: 10px 0; }

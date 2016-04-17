@@ -7,9 +7,9 @@
       padding: 0 10px;
       line-height: 20px;
       list-style-type: none;
-      background-color: rgb(255, 255, 255);
+      background-color: rgba(255, 255, 255, 0);
       cursor: pointer;
-      border-top: 1px solid rgb(139, 139, 139);
+      border-top: 1px solid rgb(122, 122, 122);
       a{
         display: block;
         width: auto;
@@ -21,11 +21,11 @@
   }
 }
 .artistBio{
-  background-color: rgb(210, 212, 211);
+  background-color: rgb(196, 196, 196);
   padding: 30px;
   .artistImg{
     height: 120px;
-    border: 5px solid rgb(152, 152, 152);
+    border: 5px solid rgb(168, 168, 168);
     border-radius: 5px;
   }
   .imgBackLine{

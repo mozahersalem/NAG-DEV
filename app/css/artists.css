@@ -5,9 +5,9 @@
     padding: 0 10px;
     line-height: 20px;
     list-style-type: none;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
     cursor: pointer;
-    border-top: 1px solid #8b8b8b; }
+    border-top: 1px solid #7a7a7a; }
     .artistsMenuContainer .artistsMenu li a {
       display: block;
       width: auto;
@@ -16,11 +16,11 @@
       padding-left: 10px; }
 
 .artistBio {
-  background-color: #d2d4d3;
+  background-color: #c4c4c4;
   padding: 30px; }
   .artistBio .artistImg {
     height: 120px;
-    border: 5px solid #989898;
+    border: 5px solid #a8a8a8;
     border-radius: 5px; }
   .artistBio .imgBackLine {
     margin: 0;

@@ -18,16 +18,6 @@ angular.module('NileArtGallery').controller('ExhibitionsController', ['$scope', 
       "images/Exhibitions/NagiFarid/NagiFarid_09.jpg",
       "images/Exhibitions/NagiFarid/NagiFarid_10.jpg"
     ]
-  }, {
-    "name": "On the Edge",
-    "creator": "Salah El- Meligy",
-    "date": "10/5/2015",
-    "mainImage": "images/Exhibitions/SalahElmeligy/SalahElmeligy_main.jpg",
-    "images": [
-      "images/Exhibitions/SalahElmeligy/SalahElmeligy_01.jpg",
-      "images/Exhibitions/SalahElmeligy/SalahElmeligy_02.jpg",
-      "images/Exhibitions/SalahElmeligy/SalahElmeligy_03.jpg"
-    ]
   }];
   $scope.Exhibitions = [{
     "name": "The Im-Possibelitites",
@@ -117,5 +107,5 @@ angular.module('NileArtGallery').controller('ExhibitionsController', ['$scope', 
   $scope.showDefaultExhibition = true;
   $scope.hideDefaultExhibition = function() {
     $scope.showDefaultExhibition = false;
-  }
+  };
 }]);

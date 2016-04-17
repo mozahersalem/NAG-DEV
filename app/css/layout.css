@@ -1,3 +1,6 @@
+body {
+  background-color: #F1F0EF !important; }
+
 .centerText {
   text-align: center; }
 
@@ -9,3 +12,9 @@ a:focus,
 a:active {
   text-decoration: none !important;
   background-color: #e7e7e7 !important; }
+
+.footerDiv {
+  background-color: #b1b1b1; }
+  .footerDiv p {
+    line-height: 35px;
+    margin: 0; }
