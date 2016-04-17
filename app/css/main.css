@@ -1,3 +1,6 @@
+body {
+  background-color: #F1F0EF !important; }
+
 .centerText {
   text-align: center; }
 
@@ -10,6 +13,12 @@ a:active {
   text-decoration: none !important;
   background-color: #e7e7e7 !important; }
 
+.footerDiv {
+  background-color: #b1b1b1; }
+  .footerDiv p {
+    line-height: 35px;
+    margin: 0; }
+
 .artistsMenuContainer .artistsMenu {
   padding: 5px;
   margin-right: 50px; }
@@ -17,9 +26,9 @@ a:active {
     padding: 0 10px;
     line-height: 20px;
     list-style-type: none;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
     cursor: pointer;
-    border-top: 1px solid #8b8b8b; }
+    border-top: 1px solid #7a7a7a; }
     .artistsMenuContainer .artistsMenu li a {
       display: block;
       width: auto;
@@ -28,11 +37,11 @@ a:active {
       padding-left: 10px; }
 
 .artistBio {
-  background-color: #d2d4d3;
+  background-color: #c4c4c4;
   padding: 30px; }
   .artistBio .artistImg {
     height: 120px;
-    border: 5px solid #989898;
+    border: 5px solid #a8a8a8;
     border-radius: 5px; }
   .artistBio .imgBackLine {
     margin: 0;
@@ -59,6 +68,9 @@ a:active {
       max-height: 500px;
       margin-left: auto;
       margin-right: auto; }
+  .sliderContainer .sliderRow {
+    background-color: #dddddd;
+    padding-top: 10px; }
   .sliderContainer .carouselIndicators {
     text-align: center; }
     .sliderContainer .carouselIndicators .rn-carousel-indicator {
@@ -82,7 +94,7 @@ a:active {
     padding: 0 10px;
     line-height: 25px;
     list-style-type: none;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
     cursor: pointer;
     border-top: 1px solid #8b8b8b; }
     .ExhibitionsContainer .exhibitionMenu li a {
@@ -94,11 +106,20 @@ a:active {
   .ExhibitionsContainer .exhibitionMenu .menuTitle {
     cursor: inherit;
     padding: 1px 5px;
-    background-color: #eee; }
+    background-color: #b8b8b8; }
 
 .ExhibitionsContainer .exhibitionThumbnails {
   height: 120px;
   margin: 5px; }
+
+.ExhibitionsContainer .mainImgeContainer {
+  background-color: #dddddd;
+  margin-left: -10px;
+  margin-right: 10px;
+  border-radius: 5px; }
+  .ExhibitionsContainer .mainImgeContainer .mainImage {
+    margin: 10px 0;
+    border-radius: 5px; }
 
 .ExhibitionsContainer .exhibitionDetails {
   text-align: center;
@@ -106,8 +127,8 @@ a:active {
   padding: 10px 0;
   border-radius: 5px; }
 
-.ExhibitionsContainer .mainImage {
-  margin: 10px 0; }
+.NileArtGalleryMenu {
+  background-color: #e0e0e0 !important; }
 
 @media (min-width: 767px) {
   .navbar-nav,
@@ -117,7 +138,8 @@ a:active {
   .navbar-nav li {
     display: inline-block !important; }
   .navbar-brand {
-    padding: 15px !important; }
+    padding: 15px !important;
+    color: black !important; }
   .NileArtGalleryMenu .navbar-nav > li {
     float: left;
     display: inline-block;
@@ -128,7 +150,8 @@ a:active {
     width: 110px; }
   .NileArtGalleryMenu .navHeader {
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    border-bottom: 1px solid #5f5f5f; }
     .NileArtGalleryMenu .navHeader a {
       height: 50px;
       padding: 15px 15px;
@@ -139,7 +162,8 @@ a:active {
       margin: auto;
       width: 200px;
       padding-left: 5px;
-      padding-right: 5px; } }
+      padding-right: 5px;
+      color: black; } }
 
 .imageContainer {
   height: 400px; }
@@ -151,3 +175,16 @@ a:active {
 
 .imageContainer:hover {
   background-color: #f8f8f8; }
+
+.aboutUsContainer .logoAboutusHidden {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px; }
+
+.aboutUsContainer .bioParagraph {
+  padding: 10px 20px; }
+
+.aboutUsContainer .logoAboutus {
+  width: 100%;
+  margin-top: -200px;
+  margin-left: 15px; }

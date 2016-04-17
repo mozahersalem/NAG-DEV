@@ -30,13 +30,13 @@
     <!-- END exhibition menu -->
 
     <!-- Default main exibition image -->
-    <div class="col-xs-12 col-md-5 borderInspect" ng-show="showDefaultExhibition">
+    <div class="col-xs-12 col-md-5 mainImgeContainer borderInspect" ng-show="showDefaultExhibition">
       <img ng-src="{{ExhibitionsCurrent[0].mainImage}}" class="img-responsive mainImage" alt=""/>
     </div>
     <!-- END Default main exibition image -->
 
     <!-- exhibition main images -->
-    <div class="col-xs-12 col-md-5 borderInspect" ng-hide="showDefaultExhibition">
+    <div class="col-xs-12 col-md-5 mainImgeContainer borderInspect" ng-hide="showDefaultExhibition">
       <img ng-src="{{mainImage}}" class="img-responsive mainImage" alt=""/>
     </div>
     <!-- END exhibition main images -->

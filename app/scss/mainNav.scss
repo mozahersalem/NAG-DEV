@@ -1,3 +1,6 @@
+.NileArtGalleryMenu{
+  background-color: rgb(224, 224, 224) !important;
+}
 @media (min-width: 767px) {
   .navbar-nav,
   .navbar-nav li {
@@ -9,6 +12,7 @@
   }
   .navbar-brand {
     padding: 15px !important;
+    color: black !important;
   }
   .NileArtGalleryMenu {
     .navbar-nav > li {
@@ -24,6 +28,7 @@
     .navHeader {
       width: 100%;
       text-align: center;
+      border-bottom: 1px solid rgb(95,95,95);
       a{
       height: 50px;
       padding: 15px 15px;
@@ -36,6 +41,7 @@
         width: 200px;
         padding-left: 5px;
         padding-right: 5px;
+        color: black;
       }
     }
   }

@@ -9,31 +9,25 @@ var NileArtGallery = angular.module('NileArtGallery', [
   ])
   .config(['$routeProvider', function($routeProvider) {
     $routeProvider.when('/exhibitions', {
-      templateUrl: 'partials/exhibitions.html',
-      controller: ''
-    });
-    $routeProvider.when('/artist', {
-      templateUrl: 'partials/artists.html',
-      controller: ''
-    });
-    $routeProvider.when('/store', {
-      templateUrl: 'partials/store.html',
-      controller: ''
-    });
-    $routeProvider.when('/home', {
-      templateUrl: 'partials/home.html',
-      controller: ''
-    });
-    $routeProvider.when('/gallery', {
-      templateUrl: 'partials/gallery.html',
-      controller: ''
-    });
-    $routeProvider.when('/aboutUs', {
-      templateUrl: 'partials/aboutUs.html',
-      controller: ''
-    });
-    $routeProvider.otherwise({
-      redirectTo: '/home'
+        templateUrl: 'partials/exhibitions.html',
+        controller: ''
+      }).when('/artist', {
+        templateUrl: 'partials/artists.html',
+        controller: ''
+      }).when('/store', {
+        templateUrl: 'partials/store.html',
+        controller: ''
+      }).when('/home', {
+        templateUrl: 'partials/home.html',
+        controller: ''
+      }).when('/gallery', {
+        templateUrl: 'partials/gallery.html',
+        controller: ''
+      }).when('/aboutUs', {
+        templateUrl: 'partials/aboutUs.html',
+        controller: ''
+      }).otherwise({
+        redirectTo: '/home'
     });
     // $locationProvider.html5Mode(true); //activate HTML5 Mode
   }]);

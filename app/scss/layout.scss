@@ -1,4 +1,7 @@
 // Layout Page
+body{
+  background-color: #F1F0EF !important;
+}
 .borderInspect {
   // border: 1px solid rgb(0, 255, 255);
 }
@@ -17,4 +20,12 @@ a:focus,
 a:active {
   text-decoration: none !important;
   background-color: rgb(231, 231, 231) !important;
+}
+
+.footerDiv{
+  background-color: rgb(177, 177, 177);
+  p{
+    line-height: 35px;
+    margin: 0;
+  }
 }

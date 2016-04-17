@@ -56,9 +56,10 @@ gulp.task('scripts', function () {
 
   var javaScript = gulp.src('app/js/*.js');
   var jsControllers = gulp.src('app/js/controllers/*.js');
-  var jsDirectives = gulp.src('app/js/directives/*.js');
+  var jsDirectives = gulp.src('app/js/directives/**/*.js');
+  var libs = gulp.src('app/lip/js/*.js');
 
-  return es.merge(javaScript, jsControllers, jsDirectives)
+  return es.merge(javaScript, jsControllers, jsDirectives, libs)
   .pipe(concat('all.min.js'))
   .pipe(uglify())
   .pipe(gulp.dest('dist'));
