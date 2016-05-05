@@ -88,6 +88,10 @@ a:active {
     .sliderContainer .carousel {
       height: 300px; } }
 
+.ExhibitionsContainer .mainRow {
+  margin: 0;
+  padding: 0; }
+
 .ExhibitionsContainer .exhibitionMenu {
   padding: 5px; }
   .ExhibitionsContainer .exhibitionMenu li {
@@ -114,8 +118,6 @@ a:active {
 
 .ExhibitionsContainer .mainImgeContainer {
   background-color: #dddddd;
-  margin-left: -10px;
-  margin-right: 10px;
   border-radius: 5px; }
   .ExhibitionsContainer .mainImgeContainer .mainImage {
     margin: 10px 0;

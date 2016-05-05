@@ -1,5 +1,9 @@
 // Exhibitions Page
 .ExhibitionsContainer{
+  .mainRow{
+    margin: 0;
+    padding: 0;
+  }
   .exhibitionMenu{
     padding: 5px;
     li{
@@ -31,8 +35,6 @@
 
   .mainImgeContainer{
     background-color: rgb(221, 221, 221);
-    margin-left: -10px;
-    margin-right: 10px;
     border-radius: 5px;
     .mainImage{
       margin: 10px 0;
